@@ -1,0 +1,27 @@
+.header {
+  padding: 24px 0;
+
+  background: linear-gradient(252.91deg, #e3e7f6 3.68%, rgba(227, 231, 246, 0) 97.82%);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.list__item {
+  padding: 14px 32px;
+}
+
+.nav__link {
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #646a89;
+}

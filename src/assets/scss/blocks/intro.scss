@@ -1,0 +1,39 @@
+.intro {
+  position: relative;
+
+  padding: 210px 0;
+  background: linear-gradient(252.91deg, #e3e7f6 3.68%, rgba(227, 231, 246, 0) 97.82%);
+
+  overflow: hidden;
+
+  &__block {
+    max-width: 530px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+
+    &--products {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 33px;
+
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    &:first-child {
+      margin-right: 16px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: -12px;
+  }
+}

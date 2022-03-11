@@ -1,0 +1,67 @@
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+
+  background: $accent;
+  border: 1px solid $accent;
+  cursor: pointer;
+  border-radius: 6px;
+
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: #fff;
+  text-decoration: none;
+
+  transition: all 0.3s linear;
+
+  &:hover {
+    background: none;
+    color: $accent;
+  }
+
+  &--outlined {
+    background: none;
+    color: $accent;
+
+    &:hover {
+      background: $accent;
+      color: #fff;
+    }
+  }
+
+  &--arrow {
+    position: relative;
+
+    padding: 12px 24px 12px 48px;
+
+    background: none;
+    color: $accent;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 25px;
+      content: '';
+
+      width: 15px;
+      height: 15px;
+
+      background: url('../images/products/arrow-right.svg');
+      background-repeat: no-repeat;
+
+      transition: all 0.2s linear;
+    }
+
+    &:hover {
+      background: $accent;
+      color: #fff;
+
+      &::before {
+        left: unset;
+        right: -30px;
+      }
+    }
+  }
+}

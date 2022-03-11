@@ -1,0 +1,35 @@
+.company {
+  padding: 100px 0 55px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__block {
+    max-width: 400px;
+    text-align: left;
+
+    &--reverse {
+      max-width: 470px;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 27px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__btn {
+    margin-top: 42px;
+  }
+}

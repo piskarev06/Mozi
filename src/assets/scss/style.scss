@@ -1,0 +1,49 @@
+@import 'mixins';
+@import 'vars';
+@import 'vendor/reset';
+
+html {
+  font-size: 16x;
+}
+
+body {
+  font-family: 'Europa', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: $textColor;
+
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.red {
+  color: $accent;
+}
+
+/* Blocks */
+@import 'blocks/container';
+@import 'blocks/header';
+@import 'blocks/btn';
+@import 'blocks/intro';
+@import 'blocks/title';
+@import 'blocks/brands';
+@import 'blocks/products';
+@import 'blocks/creators';
+@import 'blocks/innovation';
+@import 'blocks/build';
+@import 'blocks/footer';
+@import 'blocks/company';
+@import 'blocks/know';

@@ -1,0 +1,49 @@
+.products {
+  padding: 106px 0;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    margin-bottom: 97px;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.card {
+  &__item {
+    background: #ffffff;
+    box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.08);
+    border-radius: 8px;
+
+    min-height: 530px;
+
+    &:first-child {
+      margin-right: 32px;
+    }
+  }
+
+  &__content {
+    padding: 62px 62px 0;
+  }
+
+  &__logo {
+    margin-bottom: 45px;
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 31px;
+
+    color: $textColor2;
+
+    margin-bottom: 33px;
+  }
+}
