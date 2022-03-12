@@ -6,8 +6,20 @@
 
   overflow: hidden;
 
+  &__inner {
+    &--about {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
   &__block {
     max-width: 530px;
+
+    &--about {
+      max-width: 400px;
+    }
   }
 
   &__title {
@@ -23,11 +35,20 @@
     line-height: 33px;
 
     margin-bottom: 40px;
+
+    &--about {
+      font-size: 28px;
+      line-height: 36px;
+    }
   }
 
   &__btn {
     &:first-child {
       margin-right: 16px;
+    }
+
+    &--career {
+      margin-top: 40px;
     }
   }
 
@@ -35,5 +56,9 @@
     position: absolute;
     bottom: 0;
     right: -12px;
+
+    &--about {
+      position: static;
+    }
   }
 }

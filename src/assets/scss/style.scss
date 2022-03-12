@@ -33,6 +33,13 @@ a {
   color: $accent;
 }
 
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.mr-0 {
+  margin-right: 0 !important;
+}
+
 /* Blocks */
 @import 'blocks/container';
 @import 'blocks/header';
@@ -47,3 +54,7 @@ a {
 @import 'blocks/footer';
 @import 'blocks/company';
 @import 'blocks/know';
+@import 'blocks/facts';
+@import 'blocks/culture';
+@import 'blocks/we';
+@import 'blocks/hiring';

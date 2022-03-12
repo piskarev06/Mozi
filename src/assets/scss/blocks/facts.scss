@@ -1,0 +1,40 @@
+.facts {
+  padding: 83px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding-top: 53px;
+    box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+    border-radius: 8px;
+
+    min-height: 318px;
+
+    text-align: center;
+  }
+
+  &__number {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 62px;
+
+    color: $blue;
+
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 33px;
+
+    margin-bottom: revert;
+  }
+
+  &__img {
+    display: block;
+    margin-top: auto;
+  }
+}

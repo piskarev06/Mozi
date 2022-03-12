@@ -1,0 +1,30 @@
+.hiring {
+  padding: 150px 0;
+  background: linear-gradient(268.52deg, #e3e7f6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__block {
+    max-width: 340px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    position: relative;
+  }
+
+  &__decor {
+    position: absolute;
+  }
+}

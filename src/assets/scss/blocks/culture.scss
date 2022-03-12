@@ -1,0 +1,45 @@
+.culture {
+  padding: 65px 0;
+  background: linear-gradient(268.52deg, #e3e7f6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+
+  &__inner {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    margin-bottom: 97px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    padding: 40px;
+    flex: 0 0 30%;
+
+    text-align: left;
+    background: #fff;
+    box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+    border-radius: 8px;
+
+    margin-right: 36px;
+    margin-bottom: 36px;
+  }
+}
+
+.item__title {
+  font-size: 28px;
+  line-height: 31px;
+
+  color: $textColor2;
+
+  margin-bottom: 32px;
+}
