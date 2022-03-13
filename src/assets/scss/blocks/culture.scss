@@ -42,4 +42,25 @@
   color: $textColor2;
 
   margin-bottom: 32px;
+
+  &--career {
+    position: relative;
+
+    padding-left: 54px;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      content: '';
+
+      width: 37px;
+      height: 37px;
+
+      background: url('../images/careerPage/culture/flexibility.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
 }

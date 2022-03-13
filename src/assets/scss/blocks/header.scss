@@ -1,7 +1,11 @@
 .header {
   padding: 24px 0;
+  position: fixed;
+  width: 100%;
 
-  background: linear-gradient(252.91deg, #e3e7f6 3.68%, rgba(227, 231, 246, 0) 97.82%);
+  z-index: 1;
+
+  // background: linear-gradient(252.91deg, #e3e7f6 3.68%, rgba(227, 231, 246, 0) 97.82%);
 
   &__inner {
     display: flex;

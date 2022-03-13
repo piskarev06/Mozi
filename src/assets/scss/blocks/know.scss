@@ -1,6 +1,10 @@
 .know {
   padding: 80px 0 137px;
 
+  &--career {
+    padding-bottom: 112px;
+  }
+
   &__block {
     max-width: 750px;
     margin: 0 auto;
@@ -19,6 +23,12 @@
   &__btn {
     &:first-child {
       margin-right: 20px;
+    }
+
+    &--career {
+      &:first-child {
+        margin-right: 0;
+      }
     }
   }
 }
