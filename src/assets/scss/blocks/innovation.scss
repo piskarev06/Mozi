@@ -1,6 +1,10 @@
 .innovation {
   padding: 120px 0;
 
+  @include breakpoint(768px) {
+    padding: 60px 0;
+  }
+
   &__inner {
     text-align: center;
   }
@@ -11,6 +15,10 @@
 
   &__text {
     margin-bottom: 113px;
+
+    @include breakpoint(768px) {
+      margin-bottom: 60px;
+    }
   }
 
   &__slider {
@@ -23,6 +31,10 @@
 
 .slider__item {
   border-radius: 8px;
+
+  & img {
+    max-width: 100%;
+  }
 }
 
 // .swiper {
@@ -39,9 +51,9 @@
   }
 }
 
-.swiper-wrapper {
-  align-items: center;
-}
+// .swiper-wrapper {
+//   align-items: center;
+// }
 
 // .swiper-button-prev {
 

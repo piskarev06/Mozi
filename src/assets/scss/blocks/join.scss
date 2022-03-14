@@ -1,6 +1,10 @@
 .join {
   padding: 70px 0;
 
+  @include breakpoint(768px) {
+    padding: 60px 0;
+  }
+
   &__inner {
     text-align: center;
   }
@@ -11,6 +15,10 @@
 
   &__text {
     margin-bottom: 100px;
+
+    @include breakpoint(768px) {
+      margin-bottom: 60px;
+    }
   }
 
   &__item {
@@ -27,10 +35,21 @@
     &:not(:last-child) {
       margin-bottom: 30px;
     }
+
+    @include breakpoint(768px) {
+      padding: 30px 45px;
+
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 
   &__btn {
     margin-top: 68px;
+
+    @include breakpoint(768px) {
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -46,6 +65,13 @@
     color: $textColor;
 
     margin-bottom: 24px;
+
+    @include breakpoint(768px) {
+      font-size: 26px;
+      line-height: 25px;
+
+      text-align: center;
+    }
   }
 
   &__descr {
@@ -57,6 +83,10 @@
     color: #8f90a6;
 
     gap: 28px;
+
+    @include breakpoint(768px) {
+      justify-content: space-between;
+    }
   }
 
   &__time {

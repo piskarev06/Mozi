@@ -2,14 +2,33 @@
   padding: 150px 0;
   background: linear-gradient(268.52deg, #e3e7f6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
 
+  @include breakpoint(768px) {
+    padding: 60px 0;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    gap: 30px;
+
+    @include breakpoint(992px) {
+      flex-direction: column;
+      gap: 100px;
+    }
   }
 
   &__block {
     max-width: 340px;
+
+    flex: 0 0 30%;
+
+    @include breakpoint(992px) {
+      max-width: 620px;
+
+      text-align: center;
+    }
   }
 
   &__title {
@@ -26,5 +45,25 @@
 
   &__decor {
     position: absolute;
+    bottom: -70px;
+    left: 70px;
+
+    max-width: 100%;
+
+    @include breakpoint(992px) {
+      left: unset;
+      right: 100px;
+    }
+    @include breakpoint(480px) {
+      right: 70px;
+
+      width: 170px;
+    }
+  }
+
+  &__img {
+    img {
+      max-width: 100%;
+    }
   }
 }

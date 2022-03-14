@@ -6,11 +6,25 @@
 
   overflow: hidden;
 
+  @include breakpoint(768px) {
+    padding: 185px 0 105px;
+  }
+  @include breakpoint(480px) {
+    padding: 130px 0 50px;
+  }
+
   &__inner {
     &--about {
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    @include breakpoint(1200px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
   }
 
@@ -20,6 +34,10 @@
     &--about {
       max-width: 400px;
     }
+
+    @include breakpoint(1200px) {
+      margin-bottom: 40px;
+    }
   }
 
   &__title {
@@ -27,6 +45,21 @@
 
     &--products {
       margin-bottom: 40px;
+    }
+
+    @include breakpoint(768px) {
+      margin-bottom: 25px;
+
+      &--products {
+        margin-bottom: 30px;
+      }
+    }
+    @include breakpoint(480px) {
+      margin-bottom: 20px;
+
+      &--products {
+        margin-bottom: 25px;
+      }
     }
   }
 
@@ -39,6 +72,27 @@
     &--about {
       font-size: 28px;
       line-height: 36px;
+    }
+
+    @include breakpoint(768px) {
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 30px;
+
+      &--about {
+        font-size: 22px;
+        line-height: 30px;
+      }
+    }
+    @include breakpoint(480px) {
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 15px;
+
+      &--about {
+        font-size: 20px;
+        line-height: 22px;
+      }
     }
   }
 
@@ -57,7 +111,13 @@
     bottom: 0;
     right: -12px;
 
+    max-width: 100%;
+
     &--about {
+      position: static;
+    }
+
+    @include breakpoint(1200px) {
       position: static;
     }
   }

@@ -1,12 +1,27 @@
 .facts {
   padding: 83px 0;
 
+  @include breakpoint(768px) {
+    padding: 30px 0;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
+
+    gap: 20px;
+
+    @include breakpoint(992px) {
+      flex-direction: column;
+    }
   }
 
   &__item {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+
     padding-top: 53px;
     box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
     border-radius: 8px;
@@ -24,6 +39,11 @@
     color: $blue;
 
     margin-bottom: 18px;
+
+    @include breakpoint(768px) {
+      font-size: 46px;
+      line-height: 42px;
+    }
   }
 
   &__text {
@@ -34,7 +54,6 @@
   }
 
   &__img {
-    display: block;
-    margin-top: auto;
+    max-width: 330px;
   }
 }

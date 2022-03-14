@@ -64,4 +64,14 @@
       }
     }
   }
+
+  &--mobile {
+    padding: 40px;
+    font-size: 40px;
+
+    @include breakpoint(768px) {
+      padding: 28px;
+      font-size: 28px;
+    }
+  }
 }

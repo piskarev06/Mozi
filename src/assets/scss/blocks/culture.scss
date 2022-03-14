@@ -12,6 +12,10 @@
 
   &__text {
     margin-bottom: 97px;
+
+    @include breakpoint(768px) {
+      margin-bottom: 60px;
+    }
   }
 
   &__list {
@@ -19,6 +23,12 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+
+    gap: 36px;
+
+    @include breakpoint(992px) {
+      gap: 30px;
+    }
   }
 
   &__item {
@@ -30,8 +40,12 @@
     box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
     border-radius: 8px;
 
-    margin-right: 36px;
-    margin-bottom: 36px;
+    @include breakpoint(992px) {
+      flex: 0 0 48%;
+    }
+    @include breakpoint(768px) {
+      flex: 0 0 100%;
+    }
   }
 }
 
@@ -42,6 +56,13 @@
   color: $textColor2;
 
   margin-bottom: 32px;
+
+  @include breakpoint(768px) {
+    font-size: 26px;
+    line-height: 25px;
+
+    margin-bottom: 20px;
+  }
 
   &--career {
     position: relative;

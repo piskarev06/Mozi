@@ -5,6 +5,10 @@
     padding-bottom: 112px;
   }
 
+  @include breakpoint(768px) {
+    padding: 60px 0;
+  }
+
   &__block {
     max-width: 750px;
     margin: 0 auto;
@@ -23,6 +27,20 @@
   &__btn {
     &:first-child {
       margin-right: 20px;
+    }
+
+    @include breakpoint(480px) {
+      display: block;
+
+      &:first-child {
+        margin: 0 0 15px;
+      }
+
+      &--career {
+        &:first-child {
+          margin-bottom: 0;
+        }
+      }
     }
 
     &--career {
