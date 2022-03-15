@@ -120,6 +120,18 @@
 
     margin-bottom: 25px;
 
+    &-1::before {
+      background: url('../images/contactPage/contact/01.jpg');
+    }
+
+    &-2::before {
+      background: url('../images/contactPage/contact/02.jpg');
+    }
+
+    &-3::before {
+      background: url('../images/contactPage/contact/02.jpg');
+    }
+
     &::before {
       position: absolute;
       top: 50%;
@@ -130,7 +142,6 @@
       width: 40px;
       height: 27px;
 
-      background: url('../images/contactPage/contact/01.jpg');
       background-repeat: no-repeat;
       background-size: cover;
     }

@@ -69,6 +69,30 @@
 
     padding-left: 54px;
 
+    &-1::before {
+      background-image: url('../images/careerPage/culture/01.svg');
+    }
+
+    &-2::before {
+      background-image: url('../images/careerPage/culture/02.svg');
+    }
+
+    &-3::before {
+      background-image: url('../images/careerPage/culture/03.svg');
+    }
+
+    &-4::before {
+      background-image: url('../images/careerPage/culture/04.svg');
+    }
+
+    &-5::before {
+      background-image: url('../images/careerPage/culture/05.svg');
+    }
+
+    &-6::before {
+      background-image: url('../images/careerPage/culture/06.svg');
+    }
+
     &::before {
       position: absolute;
       top: 50%;
@@ -79,7 +103,6 @@
       width: 37px;
       height: 37px;
 
-      background: url('../images/careerPage/culture/flexibility.svg');
       background-repeat: no-repeat;
       background-size: cover;
     }

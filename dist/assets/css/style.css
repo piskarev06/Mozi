@@ -701,6 +701,10 @@ a {
     max-width: 400px;
 }
 
+.intro__block--contact {
+    max-width: 500px;
+}
+
 @media (max-width: 1200px) {
     .intro__block {
         margin-bottom: 40px;
@@ -746,6 +750,10 @@ a {
     line-height: 36px;
 }
 
+.intro__text--contact {
+    font-size: 18px;
+}
+
 @media (max-width: 768px) {
     .intro__text {
         font-size: 20px;
@@ -789,6 +797,10 @@ a {
 
 .intro__img--about {
     position: static;
+}
+
+.intro__img--contact {
+    right: 10%;
 }
 
 @media (max-width: 1200px) {
@@ -2063,4 +2075,157 @@ a {
     background: url("../images/careerPage/join/location.svg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.contact {
+    padding: 100px 0 160px;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 60px 0;
+    }
+}
+
+.contact__inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+@media (max-width: 992px) {
+    .contact__inner {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+.contact__block {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+}
+
+.contact__block:last-child {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+}
+
+@media (max-width: 992px) {
+    .contact__block {
+        width: 80%;
+    }
+
+    .contact__block:last-child {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .contact__block {
+        width: 100%;
+    }
+}
+
+.contact__form {
+    padding: 50px 50px 55px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+    border-radius: 8px;
+}
+
+@media (max-width: 480px) {
+    .contact__form {
+        padding: 30px 30px 35px;
+    }
+}
+
+.form__label {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #8f90a6;
+    margin-bottom: 5px;
+}
+
+.form__input {
+    padding: 20px 32px;
+    border: 1px solid #e3e7f6;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 480px) {
+    .form__input {
+        padding: 15px 25px;
+    }
+}
+
+.form__textarea {
+    padding: 20px 32px;
+    resize: none;
+    border: 1px solid #e3e7f6;
+    border-radius: 6px;
+    min-height: 148px;
+    margin-bottom: 30px;
+}
+
+.form__btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.location__item {
+    max-width: 250px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.location__item:not(:last-child) {
+    margin-bottom: 72px;
+}
+
+@media (max-width: 992px) {
+    .location__item {
+        max-width: 420px;
+    }
+}
+
+.location__title {
+    position: relative;
+    padding-left: 60px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 25px;
+}
+
+.location__title::before {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    content: "";
+    width: 40px;
+    height: 27px;
+    background: url("../images/contactPage/contact/01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.location__text {
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: black;
 }
